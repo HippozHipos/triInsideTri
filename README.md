@@ -1,3 +1,3 @@
 # triInsideTri
 
-Generates triangles inside trianles and you can move it and and zoom and stuff. Thats it.
+Generates triangles inside triangles and you can move it and and zoom and stuff. That's it.
