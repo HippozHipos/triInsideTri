@@ -171,14 +171,8 @@ public:
 		{
 			//Each triangle generates four unqiue inner triangle
 			GenerateMiddleTriangle(tri, newVTris);
-			if (tri.flatTop)
-			{
-				GenerateFlatTops(tri, newVTris);
-			}
-			else
-			{
-				GenerateFlatBottoms(tri, newVTris);
-			}
+			GenerateFlatTops(tri, newVTris);
+			GenerateFlatBottoms(tri, newVTris);
 		}
 
 		//Add the vector that contains the triangles form this
