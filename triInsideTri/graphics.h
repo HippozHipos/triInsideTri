@@ -33,6 +33,7 @@ public:
 
 	static void RenderNIterations(olc::PixelGameEngine* pge, const int nIterations) noexcept
 	{
-		pge->DrawString({ 10, 10 }, "Iterations: " + std::to_string(nIterations));
+		pge->DrawString({ 10, 10 }, "Iterations: " + std::to_string(nIterations), olc::RED, 
+			(int)(pge->GetScreenPixelSize().x * 0.3f));
 	}
 };

@@ -15,7 +15,7 @@ public:
 private:
 	int sw;
 	int sh;
-	TriangleProcessor triangleProcessor{ sw, sh };
+	TriangleProcessor triangleProcessor{ sw, sh - 2 };
 
 public:
 	bool OnUserCreate() override
@@ -36,7 +36,7 @@ int main()
 {
 	int screenWidth = 600;
 	int screenHeight = 600;
-	int pixelSize = 1;
+	int pixelSize = 3;
 	TriInsideTri tritnsidetri{ screenWidth / pixelSize, screenHeight / pixelSize };
 	if (tritnsidetri.Construct(screenWidth / pixelSize, screenHeight / pixelSize, 
 		pixelSize, pixelSize))
